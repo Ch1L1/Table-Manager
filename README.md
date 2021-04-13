@@ -43,15 +43,7 @@ Commands that process data in table.
 - `round C` - rounds number in column `C`
 - `int C` - removes decimal part of number in column `C`  
 - `copy N M` - replaces value in column `M` with value from column `N`   
-- `swap N M` - swaps value of column `N` with value of column `M`
-
-##### Optional commands:
-- `csum C N M` - to cell in column `C` sets sum of cells `N` to `M` (including)
-- `cavg C N M` - same as csum, but to column `C` sets average of cells `N` to `M`
-- `cmin C N M` - same as csum, but to column `C` sets the smallest value of cells `N` to `M`  
-- `cmax C N M` - same as csum, but to column `C` sets the biggest value of cells `N` to `M`
-- `ccount C N M` - same as csum, but to column `C` sets count of not empty cells in range `N` to `M`
-- `cseq N M B` - to cells `N` to `M` sets increasing numbers starting at number `B`   
+- `swap N M` - swaps value of column `N` with value of column `M`  
 
 ### Row selection commands 
 Commands that selects range of rows to be processed.
@@ -61,9 +53,3 @@ Commands that selects range of rows to be processed.
 - `beginswith C STR` - selects rows, where column `C` starts with string `STR`
 - `contains C STR` - selects rows, where column `C` contains string `STR`
  
-### Premium optional commands
-- `split C STR` -  splits cell `C` by string `STR` into more cells. Columns `C+1, C+2, ...` should be moved to the right. 
-    - How would you handle various count of cells in different rows? - I am just unifying count of cells in whole table to make table valid.
-    
-### Rating of my project 
-10/10 + 2.9 premium points
