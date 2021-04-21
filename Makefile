@@ -1,10 +1,5 @@
-CFLAGS=-std=c99 -Wall -Wextra -Werror -pedantic -g
-
-all: sps memcheck
-
-sps: sps.o
+CFLAGS=-std=c99 -Wall -Wextra -Werror -pedantic
+sheet: sheet.o
 clean:
-	-rm sps sps.o
+	-rm sheet sheet.o
 
-memcheck:
-	-valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./sps -d ", :-." "[1,1];def _0" table_examples/tab1.txt
